@@ -8,13 +8,9 @@
     "show-manifest": "bun --eval \"console.log(await Bun.file('nix/package-manifest.json').text())\"",
     "sync:source": "bun run sync:npm-source",
     "sync:manifest": "bun run sync:npm-source",
-    "sync:npm-source": "bun run scripts/sync-from-npm.ts",
-    "postinstall": "bun x bun2nix -o bun.nix"
+    "sync:npm-source": "bun run scripts/sync-from-npm.ts"
   },
   "dependencies": {
     "officeparser": "8.1.0"
-  },
-  "devDependencies": {
-    "bun2nix": "2.0.8"
   }
 }
