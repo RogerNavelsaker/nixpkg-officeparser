@@ -11,6 +11,6 @@
     "sync:npm-source": "bun run scripts/sync-from-npm.ts"
   },
   "dependencies": {
-    "officeparser": "8.1.0"
+    "officeparser": "8.9.0"
   }
 }

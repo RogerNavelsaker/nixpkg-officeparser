@@ -1,0 +1,12 @@
+{
+  "kind": "npm",
+  "upstream": "officeparser",
+  "version_file": "nix/package-manifest.json",
+  "version_jq": ".package.version",
+  "pinned_paths": [
+    "bun.lock",
+    "bun.nix"
+  ],
+  "pinned_flake_regex": "officeparser|bun2nix",
+  "sync_script": "bash scripts/sync-from-npm.sh"
+}

@@ -1,11 +1,8 @@
-name: CI & Cachix
+name: CI & Cache Build
 
 on:
   push:
-    branches:
-      - main
-    tags:
-      - 'v*'
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -13,25 +10,6 @@ permissions:
   contents: read
 
 jobs:
-  build-and-cache:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest]
-    runs-on: ${{ matrix.os }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Nix
-        uses: cachix/install-nix-action@v31
-        with:
-          extra_nix_config: |
-            experimental-features = nix-command flakes
-
-      - name: Set up Cachix
-        uses: cachix/cachix-action@v16
-        with:
-          name: rogernavelsaker
-          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
-
-      - name: Build Default Package with Nix
-        run: nix build .#default --accept-flake-config --no-link
+  ci:
+    uses: RogerNavelsaker/nixpkgs/.github/workflows/reusable-ci.yml@main
+    secrets: inherit

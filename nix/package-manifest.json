@@ -3,7 +3,7 @@
   "package": {
     "repo": "officeparser",
     "npmName": "officeparser",
-    "version": "8.1.0",
+    "version": "8.9.0",
     "packageRevision": 1
   },
   "binary": {
@@ -13,12 +13,12 @@
     "aliases": []
   },
   "meta": {
-    "description": "Parse office files (.docx, .pptx, .xlsx, .odt, .pdf, .rtf, .csv) and generate high-fidelity Markdown and JSON",
-    "homepage": "https://github.com/harshankur/officeParser",
+    "description": "A robust, strictly-typed Node.js and Browser library for parsing office files (.docx, .pptx, .xlsx, .odt, .odp, .ods, .odg, .pdf, .rtf, .csv, .md, .html, .epub, .tex) and generating high-fidelity outputs in DOCX, ODT, XLSX, ODS, PPTX, ODP, LaTeX, Markdown",
+    "homepage": "https://officeparser.harshankur.com",
     "licenseSpdx": "MIT"
   },
   "dist": {
-    "url": "https://registry.npmjs.org/officeparser/-/officeparser-8.1.0.tgz",
-    "hash": "sha512-K48VPRUUIHqPBpmUiE3DVquWvrqubyWK+4jo3b/IGqiwejywxOTSU4Te4IRQN/7xP9QaM09AUfjQ0lEYDA2mWA=="
+    "url": "https://registry.npmjs.org/officeparser/-/officeparser-8.9.0.tgz",
+    "hash": "sha512-xev/YU26lCoynqatHl50DVVyVz6KFBfkP0cP7p+VXSVzZUOnDgY24os7p8zPmnHpCHqRZgmIyHCuOd3j6OHW5w=="
   }
 }
